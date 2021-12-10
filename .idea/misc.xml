@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/user/fitnessFriend/app/src/main/res/layout/activity_find_friend.xml" value="0.16" />
+        <entry key="..\:/Users/user/fitnessFriend/app/src/main/res/layout/activity_gym_buddy.xml" value="0.23854166666666668" />
+        <entry key="..\:/Users/user/fitnessFriend/app/src/main/res/layout/activity_login.xml" value="0.22509057971014493" />
+        <entry key="..\:/Users/user/fitnessFriend/app/src/main/res/layout/activity_profile.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/user/fitnessFriend/app/src/main/res/layout/activity_reset_password.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/user/fitnessFriend/app/src/main/res/layout/activity_trainer_sign_up.xml" value="0.23854166666666668" />
+        <entry key="..\:/Users/user/fitnessFriend/app/src/main/res/layout/activity_video.xml" value="0.23854166666666668" />
+        <entry key="..\:/Users/user/fitnessFriend/app/src/main/res/layout/activity_workouts.xml" value="0.23854166666666668" />
+        <entry key="..\:/Users/user/fitnessFriend/app/src/main/res/layout/users_display.xml" value="0.264" />
+      </map>
+    </option>
+  </component>
+  <component name="ExternalStorageConfigurationManager" enabled="true" />
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK" />
+</project>

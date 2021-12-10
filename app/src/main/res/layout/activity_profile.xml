@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imageViewSettings"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="352dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="19dp"
+        android:adjustViewBounds="true"
+        android:scaleType="centerInside"
+        android:src="@drawable/ic_settings"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="ImageContrastCheck,MissingConstraints" />
+
+    <TextView
+        android:id="@+id/name_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="173dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="180dp"
+        android:text="John Smith"
+        android:textColor="#0C0C0C"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.595"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/user_imageview"
+        android:layout_width="107dp"
+        android:layout_height="105dp"
+        android:layout_marginStart="141dp"
+        android:layout_marginTop="38dp"
+        android:layout_marginEnd="163dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/name_textview"
+        tools:srcCompat="@drawable/person_view" />
+
+    <TextView
+        android:id="@+id/Gender_textview"
+        android:layout_width="76dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="161dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="172dp"
+        android:text="Gender"
+        android:textAlignment="center"
+        android:textColor="#0C0C0C"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/user_imageview" />
+
+    <TextView
+        android:id="@+id/age_textview"
+        android:layout_width="100dp"
+        android:layout_height="31dp"
+        android:layout_marginStart="161dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="172dp"
+        android:text=" age"
+        android:textAlignment="center"
+        android:textColor="#171616"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.59"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Gender_textview" />
+
+    <TextView
+        android:id="@+id/keywords"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="Keywords"
+        android:textAlignment="center"
+        android:textColor="#8A2222"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.51"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/changePass_btn" />
+
+    <TextView
+        android:id="@+id/email_textview"
+        android:layout_width="308dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="43dp"
+        android:layout_weight="1"
+        android:text="   johnsmith11@gmail.com"
+        android:textAlignment="center"
+        android:textColor="#3751E1"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/age_textview" />
+
+    <ImageView
+        android:id="@+id/email_imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="360dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintEnd_toStartOf="@+id/email_textview"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/email_view" />
+
+    <ImageView
+        android:id="@+id/imageViewVideo"
+        android:layout_width="53dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="348dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/video_click" />
+
+    <Button
+        android:id="@+id/changePass_btn"
+        android:layout_width="264dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="161dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="172dp"
+        android:text="Change Password"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/email_textview" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

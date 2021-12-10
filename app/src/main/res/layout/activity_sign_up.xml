@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignUpActivity">
+
+    <EditText
+        android:id="@+id/editText_firstname"
+        android:layout_width="wrap_content"
+        android:layout_height="56dp"
+        android:layout_alignStart="@+id/editText_lastName"
+        android:layout_alignLeft="@+id/editText_lastName"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="40dp"
+        android:ems="10"
+        android:hint="@string/hint_firstName"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_StudentSignup" />
+
+    <EditText
+        android:id="@+id/editText_lastName"
+        android:layout_width="wrap_content"
+        android:layout_height="59dp"
+        android:layout_below="@+id/editText_firstname"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="40dp"
+        android:ems="10"
+        android:hint="@string/hintLastName"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText_firstname" />
+
+    <EditText
+        android:id="@+id/editText_email"
+        android:layout_width="wrap_content"
+        android:layout_height="59dp"
+        android:layout_below="@+id/editText_lastName"
+        android:layout_alignEnd="@+id/editText_lastName"
+        android:layout_alignRight="@+id/editText_lastName"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="40dp"
+        android:ems="10"
+        android:hint="@string/hint_Email"
+        android:inputType="textEmailSubject"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText_lastName" />
+
+    <EditText
+        android:id="@+id/editText_password"
+        android:layout_width="wrap_content"
+        android:layout_height="57dp"
+        android:layout_below="@+id/editText_email"
+        android:layout_alignStart="@+id/editText_email"
+        android:layout_alignLeft="@+id/editText_email"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="40dp"
+        android:ems="10"
+        android:hint="@string/hint_ChoosePassword"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText_email" />
+
+    <EditText
+        android:id="@+id/editText_repeatPass"
+        android:layout_width="wrap_content"
+        android:layout_height="57dp"
+        android:layout_below="@+id/editText_password"
+        android:layout_alignEnd="@+id/editText_password"
+        android:layout_alignRight="@+id/editText_password"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="40dp"
+        android:ems="10"
+        android:hint="@string/hint_repeatPassword"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText_password" />
+
+    <Button
+        android:id="@+id/button_cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editText_repeatPass"
+        android:layout_alignStart="@+id/editText_repeatPass"
+        android:layout_alignLeft="@+id/editText_repeatPass"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="200dp"
+        android:text="@string/str_btnCancel"
+        app:layout_constraintEnd_toStartOf="@+id/button_signup"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText_repeatPass" />
+
+    <Button
+        android:id="@+id/button_signup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/button_cancel"
+        android:layout_alignEnd="@+id/editText_repeatPass"
+        android:layout_alignRight="@+id/editText_repeatPass"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="40dp"
+        android:text="@string/str_btnSignup"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText_repeatPass" />
+
+    <TextView
+        android:id="@+id/textView_StudentSignup"
+        android:layout_width="339dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="40dp"
+        android:text="STUDENT SIGN UP"
+        android:textAllCaps="true"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="#4CAF50"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

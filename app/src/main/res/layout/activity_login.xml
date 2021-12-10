@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_rel"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".LoginActivity">
+    //android:background=""
+
+
+    <Button
+        android:id="@+id/button_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editText_password"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="160dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="160dp"
+        android:text="@string/strbtnLogin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText_password" />
+
+    <Button
+        android:id="@+id/button_signup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button_login"
+        android:layout_alignBottom="@+id/button_login"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="160dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="160dp"
+        android:text="@string/str_btnsignup"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_login"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <EditText
+        android:id="@+id/editText_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/button_login"
+        android:layout_alignLeft="@+id/button_login"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="99dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="99dp"
+        android:ems="10"
+        android:hint="@string/str_UserName"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <EditText
+        android:id="@+id/editText_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editText_email"
+        android:layout_alignStart="@+id/editText_email"
+        android:layout_alignLeft="@+id/editText_email"
+        android:layout_alignRight="@+id/editText_email"
+        android:layout_marginStart="99dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="99dp"
+        android:ems="10"
+        android:hint="@string/strhintPassword"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText_email"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <Button
+        android:id="@+id/trainer_signup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="70dp"
+        android:text="TRAINER SIGNUP"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_signup" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="238dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:background="@color/headings"
+    >
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/user_profile_view"
+        android:layout_width="85dp"
+        android:layout_height="85dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="80dp"
+        android:src="@drawable/person_view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+
+        tools:ignore="ExtraText" />
+
+    <TextView
+        android:id="@+id/user_profile_age"
+        android:layout_width="195dp"
+        android:layout_height="22dp"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="80dp"
+        android:text="Age"
+        android:textAlignment="textStart"
+        android:textColor="@color/cardview_light_background"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/user_profile_view"
+        app:layout_constraintTop_toBottomOf="@+id/userNameProfile"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/userNameProfile"
+        android:layout_width="198dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="19dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="80dp"
+        android:text="user name"
+        android:textAlignment="textStart"
+        android:textColor="@color/cardview_light_background"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/user_profile_view"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+</androidx.constraintlayout.widget.ConstraintLayout>
